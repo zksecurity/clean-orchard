@@ -1,6 +1,6 @@
 # Orchard Clean Source-Conformance Plan
 
-This PR represents an effort to model the Zcash Orchard circuit, written in Halo2,
+This repository models the Zcash Orchard circuit, written in Halo2,
 faithfully in Clean.
 
 ## Goal
