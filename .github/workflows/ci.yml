@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  orchard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build-args: Clean.Orchard --wfail
+      - name: Verify Orchard tree has no sorry declarations
+        run: |
+          ! rg --glob '*.lean' '\bsorry\b' Clean/Orchard
