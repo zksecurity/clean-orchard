@@ -9,6 +9,6 @@ package CleanOrchard where
 
 @[default_target]
 lean_lib CleanOrchard where
-  roots := #[`Clean.Orchard]
+  roots := #[`Orchard]
 
 require Clean from git "https://github.com/Verified-zkEVM/clean.git"@"1e563b9c27991b3795eb440c1ee0757edb4ce8b1"
