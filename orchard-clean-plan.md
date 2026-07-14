@@ -82,7 +82,7 @@ the relation by deferring properties to assumptions.
 
 Orchard uses the Pallas base field as its circuit field. Clean circuits should use the
 same explicit field and make use of established properties of that field and curve
-defined over it, see `Clean/Orchard/Specs`.
+defined over it, see `Orchard/Specs`.
 
 Mathematical properties that are known and needed within the scope of a circuit should
 not be deferred as obligations to callers via assumptions.

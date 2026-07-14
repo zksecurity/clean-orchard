@@ -1,9 +1,9 @@
 # Orchard Conformance Map
 
-Source → Clean coverage for `Clean/Orchard` against Orchard 0.14.0 and `halo2_gadgets-0.5.0`.
+Source → Clean coverage for `Orchard` against Orchard 0.14.0 and `halo2_gadgets-0.5.0`.
 Implementations are assumed proven (soundness + completeness) unless noted; the "Known
 Non-Conformances" section is the list of gaps and signature mismatches. The desired end
-state is in `orchard-clean-plan.md`.
+state is in [`orchard-clean-plan.md`](../orchard-clean-plan.md).
 
 Authoritative local source checkouts:
 
@@ -123,7 +123,7 @@ Source: `orchard/src/circuit.rs`, `circuit/gadget.rs`, `circuit/note_commit.rs`,
   (`ivk = CommitIvk(ak, nk, rivk)`, `[ivk] g_d_old`, constrained to `pk_d_old`)
 - Entry circuits `Gadget.ValueCommitOrchard.circuit`, `Gadget.DeriveNullifier.circuit`,
   `SpendAuthority.circuit`
-- `Orchard.Action.circuit` in `Clean/Orchard/Action.lean`: `Circuit::synthesize`, the
+- `Orchard.Action.circuit` in `Orchard/Action.lean`: `Circuit::synthesize`, the
   top-level action circuit (gadget blocks + public-instance wiring + `q_orchard` gate)
 
 ## Known Non-Conformances
