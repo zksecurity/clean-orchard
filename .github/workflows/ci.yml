@@ -14,6 +14,3 @@ jobs:
       - uses: leanprover/lean-action@v1
         with:
           build-args: Clean.Orchard --wfail
-      - name: Verify Orchard tree has no sorry declarations
-        run: |
-          ! rg --glob '*.lean' '\bsorry\b' Clean/Orchard
